@@ -16,7 +16,7 @@ export default function TopBar() {
     <div className="top">
       <div className="topLeft">
         <Link className="link" to="/">
-          <h3 className="webTitle">Urban50</h3>
+          <h3 className="webTitle">Urban50 BB</h3>
         </Link>
 
       </div>
