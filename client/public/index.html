@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Cool stuff" />
+  <!---Medium editor--->
+
+  <!-- Font Awesome for awesome icons. You can redefine icons used in a plugin configuration -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+
+
+  <!-- font awsome kit -->
+  <script src="https://kit.fontawesome.com/99ba5f920f.js" crossorigin="anonymous"></script>
+
+
+  <!-- JS -->
+
+  <script>
+    var editor = new MediumEditor('.editable');
+
+
+    $(function () {
+      $('.editable').mediumInsert({
+        editor: editor
+      });
+    });
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-148306116-1');
+  </script>
+
+  <!---Medium editor--->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital@0;1&family=Varela&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+    }
+  </style>
+  <style>
+    /*Footer styles**/
+    /*Footer styles**/
+    .link,
+    .link:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 1em 10px .1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+    img[alt=image] {
+      max-width: 100%;
+      position: center;
+      object-fit: cover;
+    }
+
+    iframe[className="iframey"] {
+      width: 100%;
+      position: center;
+      height: 350px;
+      object-fit: cover;
+      padding: 3px;
+    }
+
+    iframe[className="chess"] {
+      position: center;
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+    ct-pgn-viewer[className="chess"] {
+      position: center;
+      width: 100%;
+      object-fit: contain;
+      margin: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    footer {
+      display: block;
+      height: 300px;
+      background-color: blue;
+    }
+
+    footer>a {
+      color: black;
+    }
+
+    .footer-rw {
+      max-width: 100%;
+    }
+
+    .footer-col {
+      width: 20%;
+      float: left;
+
+    }
+
+
+@media only screen and (min-width: 710px) {
+  img[alt=image] {
+      position: center;
+      object-fit: cover;
+      margin-left: 25%;
+      max-width: 100%;
+      max-height: 100%;
+      width: 50%;
+    }
+}
+
+    @media only screen and (max-width: 700px) {
+      ct-pgn-viewer[className="chess"] {
+        position: center;
+        width: 200%;
+        object-fit: cover;
+        height: 300px;
+
+
+      }
+
+      ct-pgn-viewer .ct-pgn-viewer-move-list-and-controls {
+        width: 400px;
+        position: center;
+      }
+    }
+  </style>
+  <!--Chesstempo pgn viewer links etc-->
+  <link href="https://c2a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.vers1.css" media="all" rel="stylesheet"
+    crossorigin>
+  <script defer language="javascript" src="https://c1a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.bundle.vers1.js"
+    crossorigin></script>
+
+  <link href="https://c1a.chesstempo.com/fonts/MaterialIcons-Regular.woff2" rel="stylesheet" crossorigin>
+
+  <link href="https://c1a.chesstempo.com/fonts/chessalphanew-webfont.woff" media="all" rel="stylesheet" crossorigin>
+
+  <title>Wubbachess</title>
+</head>
+
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-element/dist/markdown-element.min.js"></script>
+
+  <div id="root"></div>
+</body>
+
+</html>

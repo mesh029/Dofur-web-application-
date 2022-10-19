@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    width: auto;
+    object-fit:contain;
+
+  }
+
+
+.land-sec{
+    display: flex;
+    flex: 1;
+    height: auto;
+    
+    
+}
+.skeletonsPosts{
+  width: 100%;  
+  
+}
+
+.land_tbl{
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+
+}
+
+.land_rw{
+  height: 300px;
+  width: 100%;
+}
+.land_rw2{
+  height: 300px;
+  width: 100%;
+}
+
+
+
+.lft{
+  width: 5%;
+
+}
+.rght{
+  width: 5%;
+
+}
+.cntr{
+  width: 100%;
+
+}
+
+.cntr2{
+  background-color: white;
+  padding: 5px;
+
+}
+
+.skeletons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.latestTitle{
+  margin-left: 30px;
+  border-bottom: 1px solid #0090b1;
+  width: 70%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.latestTitle::first-letter {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0090b1;
+}
+
+.info{
+  padding: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.info > h2{
+  border-bottom: 1px solid #0090b1;
+  width: 70%;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.tabQuote{
+  margin-left: 5px;
+
+}
+
+.tabQuote > h2{
+  width: 70%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.topQuoteTitle::first-letter{
+  font-size: 30px;
+  font-weight: 600;
+  color: #0090b1;
+}
+.q-icon{
+  color:#0090b1;
+}
+.q-icon-d{
+  color: #0090b1;
+  
+}
+
+.d{
+  width: 100%;
+  text-align: right;
+}
+.topQuoteDescDiv{
+  width: 100%;
+  align-content: center;
+  padding: 20px;
+}
+.topQuoteDesc::first-letter{
+  font-size: 30px;
+  font-weight: 600;
+  color: #0090b1;
+}
+.info > h1::first-letter{
+  font-size: 30px;
+  font-weight: 600;
+  color: #0090b1;
+
+}
+.postsAndTab{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+
+.tab{
+  width: 20%;
+  padding: 30px;
+}
+
+.posts{
+  width: 80%;
+  padding: 20PX;
+
+}
+
+@media only screen and (max-width: 1026px) {
+  .home {
+      margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tab{
+    display: none;
+  }
+
+  .lft{
+    display: none;
+  }
+  .rght{
+    display: none;
+  }
+  .cntr{
+    width: 100%;
+  }
+}

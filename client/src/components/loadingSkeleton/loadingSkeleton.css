@@ -1,0 +1,79 @@
+.card-icons{
+    color: orangered;
+}
+
+.cardIcn{
+    width: 10%;
+    margin-right: 20px;
+
+}
+.card{
+    width: 100%;
+    height: 100%;
+}
+.cardDe{
+    width: 100%;
+    height: 50%;
+}
+.cardImgImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cardContent{
+    width: 100%;
+    height: 100%;
+}
+.cardIcnTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    height: 30%;
+}
+
+.cardDescSkele{
+    width: 100%;
+    height: 70%;
+    line-height: 10px;
+}
+.cardTitleDiv{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.cardTitle{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+
+.flippySkele{
+    height: 300px;
+    margin: 15px;
+    flex: 1 0 30%;   
+}
+
+.c-icon{
+   color: burlywood;
+}
+
+.cardTitle{
+}
+
+@media only screen and (max-width: 1450px) {
+    .flippySkele{
+        flex: 1 0 45%;
+    }
+  }
+
+
+@media only screen and (max-width: 700px) {
+    .flippySkele {
+        width: 100%;
+        margin: 0px 15px 40px 15px;
+        position: center;
+    }
+
+  }

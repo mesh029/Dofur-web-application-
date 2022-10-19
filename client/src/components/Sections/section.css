@@ -1,0 +1,41 @@
+.sectionTbl{
+    width: 100%;
+}
+.sectionTblRw{
+    width: 100%;
+    height: 20%;
+}
+.sectImg{
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.sectionTd1{
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+}
+.sectionTd2{
+    width: 90%;
+    height: 100%;
+}
+
+.imgIcn{
+    background-color: aliceblue;
+    height: 100%;
+    height: 100%;
+
+}
+.title{
+    height: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.description{
+    height: 50%;
+}

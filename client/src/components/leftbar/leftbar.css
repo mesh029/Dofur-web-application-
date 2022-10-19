@@ -1,0 +1,61 @@
+.leftb {
+    flex: 0 2 200px;
+    position: fixed;
+    margin-top: 50px;
+     width: 180px;
+     height: 400px;
+     overflow-x: hidden;
+     border-right: 1px solid rgba(230, 230, 230, 1);
+     overflow-y: auto;
+
+
+  }
+  .leftb a{
+      padding: 6px 8px 6px 10px;
+      text-decoration: none;
+      font-size: 19px;
+      color: #818181;
+      display: block;
+   
+  }
+
+  .leftb a:hover{
+      color: #f1f1f1;
+  }
+
+  .side-Icn{
+    color: #01b2da56;
+  }
+  .bottomQuote{
+    text-align: right;
+  }
+
+  .bottomSayer{
+    text-align: right;
+    color: #818181;
+    font-family:'Caveat', cursive;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .snap{
+    padding: 2px;
+    font-family:'Caveat', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: grey;
+  }
+
+  .menu{
+    margin-top: 100px;
+  }
+@media screen and (max-height: 450px) {
+  .leftb {padding-top: 100px;}
+  .leftb a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 900px) {
+  .leftb {
+      display: none;
+  }
+}
