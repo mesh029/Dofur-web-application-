@@ -1,5 +1,6 @@
 import Post from "../post/Post";
 import Card from "../card/card"
+import LandCard from "../landCard/LandCard";
 import "./cards.css";
 
 export default function Cards({ cards }) {
@@ -8,7 +9,7 @@ export default function Cards({ cards }) {
     
 <div className="cards">
   {cards.map((p) => (
-    <Card card={p} />
+    <LandCard card={p} />
   ))}
 </div>
     </>

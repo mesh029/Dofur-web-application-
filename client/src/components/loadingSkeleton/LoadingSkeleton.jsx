@@ -28,11 +28,8 @@ export default function Skeleton() {
         <div className="card">
           <div className="cardContent">
             <div className="cardIcnTitle">
-              <div className="cardIcn">
-                  <Skele width={30} height={30} circle={true}/>
-              </div>
               <div className="cardTitleDiv">
-              <Skele width={'85%'} height={30}/>
+              <Skele width={'100%'} height={30}/>
 
               </div>
             </div>

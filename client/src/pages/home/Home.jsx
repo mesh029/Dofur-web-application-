@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Carousel from "../../components/carousel/Carousel";
 import LeftBar from "../../components/leftbar/Leftbar";
 import TopBar from "../../components/topbar/TopBar";
 import "./home.css";
