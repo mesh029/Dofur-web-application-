@@ -10,6 +10,7 @@ import Postprs from "../../components/Postpros/Postprs"
 import Sidebar from "../../components/sidebar/Sidebar";
 import LeftBar from "../../components/leftbar/Leftbar";
 import Carousel from "../../components/carousel/Carousel";
+import LandCard from "../../components/landCard/LandCard";
 import "./land.css";
 import axios from "axios";
 import { useLocation } from "react-router";
@@ -63,6 +64,7 @@ export default function Home() {
       const fetchPosts = async () => {
         const res = await axios.get(`/posts/?page=${"land"}` + search, cors(corsOptions));
         setPosts(res.data);
+        console.log("posts",posts)
       };
       fetchPosts({ category: "chess" });
       fetchCards();
@@ -75,31 +77,8 @@ export default function Home() {
         <Carousel/>
       </div>
       <div class="land-sec">
-              {!loader ? ((cards.length >= 1 ) ?(
-                <Cards cards={mainCard} />
+        <LandCard/>
 
-              ) : (
-                <div className="skeletons">
-                  {
-                    [1].map(loading => (
-                      <SkeletonProduct />
-
-                    ))
-                  }
-
-                </div>
-
-                )):(
-                  <div className="skeletons">
-                  {
-                    [1, 2, 3, 4, 5].map(loading => (
-                      <SkeletonProduct />
-                    ))
-                  }
-
-                </div>
-                )
-              }
       </div>
       
       <Footer />

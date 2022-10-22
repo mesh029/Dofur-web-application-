@@ -70,7 +70,6 @@
     border-bottom: 1px solid #0090b1;
     background-color: white;
 
-
 }
 .flippy:hover{
 }
@@ -81,7 +80,10 @@
 
 .cardTitle{
 }
-
+.moreInfo{
+    color: blue;
+    margin-top: 10px;
+}
 @media only screen and (max-width: 1450px) {
     .flippy{
         flex: 1 0 45%;

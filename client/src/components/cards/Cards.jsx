@@ -9,7 +9,7 @@ export default function Cards({ cards }) {
     
 <div className="cards">
   {cards.map((p) => (
-    <LandCard card={p} />
+    <Card card={p} />
   ))}
 </div>
     </>

@@ -67,12 +67,15 @@ export default function Card({ card }) {
               <div className="cardIcnLand">{icon}</div>
               <div className="cardTitleDiv">
               <NavLink className="link" activeStyle={{ fontWeight: 600, fontSize: '20px' }} to={`show/${category}`}>
-                  <h1><span className="cardTitle">{card.cardTitle}</span></h1>
+                  <h1><span className="cardTitle">{card.name}</span></h1>
                 </NavLink>
               </div>
             </div>
             <div className="cardDesc">
             {card.cardDesc}
+            <br />
+            <a href="" className='moreInfo'>moreInfo</a>
+
             </div>
           </div>
         </div>
