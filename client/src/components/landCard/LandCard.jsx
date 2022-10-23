@@ -35,7 +35,7 @@ export default function LandCard({ card }) {
         </div>
         <div className="buttons">
           <button className="button">
-            <Link className="link" to="/donate">
+            <Link className="link" to="/signup">
               Donate
             </Link>
           </button>

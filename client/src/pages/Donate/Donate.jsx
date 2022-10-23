@@ -18,6 +18,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonProduct from "../../components/loadingSkeleton/LoadingSkeleton";
 import SkeletonProductPost from "../../components/loadingSkeleton/LoadingSkeletonPost";
 import Single from "../../components/singleRecipientInfo/Single";
+import reactMediumEditor from "react-medium-editor";
 var cors = require("cors");
 
 var text =
@@ -32,7 +33,7 @@ export default function Donate() {
 
   const [cards, setCards] = useState([]);
   const { search } = useLocation();
-  const [index, setIndex] = useState(1)
+  const [index, setIndex] = useState(0);
 
   const mainCard = [
     {
@@ -228,13 +229,25 @@ export default function Donate() {
       updatedAt: "2022-05-03T08:25:46.022Z",
       __v: 0,
     },
+    {
+      _id: "6270e70aa97c2100525cfaf1",
+      name: "Muko",
+      cardTitle: "Chess",
+      cardDesc:
+        " This is Muko, a child from Meru, last year he got a good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you cana good grade in kcse but seeks assistance to join Highschool..Funds required are bluh bluh blh..please help..I know you can",
+      cardCat: "chess",
+      createdAt: "2022-05-03T08:25:46.022Z",
+      updatedAt: "2022-05-03T08:25:46.022Z",
+      __v: 0,
+    },
   ];
 
-  const recipient = {
+  const recipient = [
+  {
     categories: [],
     _id: "62c5eafc7f2a45005241e4f1",
     username: "chessMesh",
-    title: "When you dream",
+    title: "When you dream 1",
     desc: "What if we just played chess 'witty'",
     content:
       'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
@@ -245,9 +258,197 @@ export default function Donate() {
     createdAt: "2022-07-06T20:05:16.808Z",
     updatedAt: "2022-07-06T21:21:17.160Z",
     __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 2",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 3",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 4",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 5",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 6",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 7",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 8",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 9",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 10",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 11",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },{
+    categories: [],
+    _id: "62c5eafc7f2a45005241e4f1",
+    username: "chessMesh",
+    title: "When you dream 12",
+    desc: "What if we just played chess 'witty'",
+    content:
+      'The ability to come up with interesting positions over and over again without thinking much is no easy feat in chess. One has to have studied lots of chess books and memorized a lot of lines and mind boggling variations. Though controversial to some to hear, I want to believe there is a better way to come up with these amazing patterns which to my opinion are nothing short of art!\n\n\n![image](https://dunderid.sirv.com/Images/variation.jpeg "variations")\n\n> "<p>Every chess master was once a beginer."</p> <div> *~Irving Chernev*</div>\n\nFrom the moment we understand the movements of chessmen and learn how to coordinate them, we are open to an almost limitless number of inventions on a single chess board. Our brains try figuring out the best ways to outwit an opponent and when found seeks even better ways with every coming challenge. The way a person plays a chess game can tell a lot about their charachter depending on what strategies they use to win. We have mainly attackers and positional players. The attackers tend to be more aggresive and want an interesting much faster path to victory while positional players are more strategic and endure long calculations just to set their opponents off balance and get them sweating through the endgame. It is interesting really how these come naturally as if it were pure instinct; that is to say no chess player can copy the overall style of another player! It is tailor made to every individual player depending on how they see, perceive and face challenges in their every day life.\n\n![image](https://dunderid.sirv.com/Images/18915856.jpg "thinking man")\n\nBeing so interesting a game, chess players felt the urge to find the best of the best among them as is common with every other aspect in life be it sport or surprisingly enough, even eating! Early players documented their games to make sure mistakes made during past games did not  repeat themselves. They sought perfection and as always, it comes with a prize. Generations to come would later study the games of their predecessors, analyze and find better solutions to common variations which showed up in games. 10 centuries later, with all the tech and its never ending improvements in matters chess engines, chess has simply become less interesting. Winners are decided on basis of who memorizes the deepest lines and who crams the most variations between games. Blitz games have been used to escape this monotony; slicing the time needed to recall all these jumbled up variations in a players head by close to three quaters. Lol.\n\nI would love to see chess beginners turn into dreamers who bring out new plans and ideas to life with some sense of pride. Pride they did it their own way because every other player has their genius trapped in them, wanting to be let of leash. All we have going in the chess scene is people proud of how good they are at absorbing insurmountable chess content from overpriced books, programs and premium chess videos. How can such a player be called genius?  Its as much of a cliche as claiming everyone who plays chess is without question an intellect. \n\nEven so, the helm is still for the taking. All we need do is choose which path to follow, a path that doesn\'t lead to chess doomsday when nothing about chess is intersting. I say hard a-starboard chess folks! We can do this, **we can dream!**\n\n\n\n\n\n',
+    category: "chess",
+    slug: "when-you-dream",
+    shot: '"every player has their genius, trapped in them, wanting to be let of leash"',
+    shotAuthor: "Mesh",
+    createdAt: "2022-07-06T20:05:16.808Z",
+    updatedAt: "2022-07-06T21:21:17.160Z",
+    __v: 0,
+  },
+
+
+
+]
+  var recCardArray = [];
+
+  var recCardLength = recCard.length;
+
+  const populateClickDiv = () => {
+    for (let i = 1; i <= recCardLength; i++) {
+      recCardArray.push(i);
+    }
   };
 
-  console.log(cards);
+  console.log(recCardArray);
+
+  const handleClick= (p) =>{
+    console.log('hello genius', p)
+
+    setIndex(p-1)
+    
+
+
+  }
+
   /**Implementation of loading screen */
   const [loader, setLoader] = useState(false);
   /**Implementation of loading screen */
@@ -271,10 +472,26 @@ export default function Donate() {
       fetchCards();
     }, 900);
   }, [search]);
+
   return (
-    <>
       <div className="donorContainer">
         <div className="donorContainerLeft">
+        <button className="button">Make general donation</button>
+
+        <h2>Browse for recipients...</h2>
+        <h3>Community chip</h3>
+        <h4>Priority chip</h4>
+        <hr />
+        <h2>Search recipient</h2>
+          <div className="clickDiv">
+            {populateClickDiv()}
+
+            {recCardArray.map((item, index) => (
+              ///notice that we are passing a function to the onClick prop and not the result of callilng
+              //below if you invoke the function when passing it to the onClick prop, eg, handleOnClick() it would get immediately called when the component mounts!
+              <div className="indicate" onClick={()=> handleClick(item)}></div>
+            ))}
+          </div>
           <div class="land-sec">
             {!loader ? (
               cards.length >= 1 ? (
@@ -296,11 +513,8 @@ export default function Donate() {
           </div>
         </div>
         <div className="donorContainerRight">
-          <Single post={recipient} />
+          <Single post={recipient[index]} />
         </div>
       </div>
-
-      <Footer />
-    </>
   );
 }

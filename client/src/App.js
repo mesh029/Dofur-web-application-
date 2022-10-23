@@ -7,6 +7,7 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Land from "./pages/LandPage/Land"
 import Donate from "./pages/Donate/Donate"
+import Signup from "./pages/signup/Signup";
 import Show from "./pages/Chess/Show"
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
@@ -34,6 +35,8 @@ function App() {
         <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
         <Route path="/land"><Land /></Route>
         <Route path="/donate"><Donate /></Route>
+        <Route path="/signup"><Signup /></Route>
+
 
         <Route path="/home">{user ? <Home /> : <Home />}</Route>
         <Route path="/show/chess"> <Show routeName={"chess"}/></Route>
